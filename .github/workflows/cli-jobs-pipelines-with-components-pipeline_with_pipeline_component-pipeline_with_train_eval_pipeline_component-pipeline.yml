@@ -6,8 +6,8 @@
 name: cli-jobs-pipelines-with-components-pipeline_with_pipeline_component-pipeline_with_train_eval_pipeline_component-pipeline
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "4 6/12 * * *"
+  # schedule:
+  #   - cron: "4 6/12 * * *"
   pull_request:
     branches:
       - main
