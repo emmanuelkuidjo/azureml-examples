@@ -6,7 +6,7 @@ description: Train regression model based on nyc taxi dataset
 
 settings:
   default_datastore: azureml:workspaceblobstore
-  default_compute: azureml:cpu-cluster
+  default_compute: azureml:bootcamp1
   continue_on_step_failure: false
 
 # <inputs_and_outputs>
@@ -16,7 +16,7 @@ inputs:
     path: ./data
     # path: azureml:nyc_taxi_data_regression@latest
   test_split_ratio: 0.2
-  compute_train_node: cpu-cluster # example to show how to promote compute as input
+  compute_train_node: bootcamp1 # example to show how to promote compute as input
 
 # changes needed to make pipeline job as pipeline component
 ## outputs need explicit type

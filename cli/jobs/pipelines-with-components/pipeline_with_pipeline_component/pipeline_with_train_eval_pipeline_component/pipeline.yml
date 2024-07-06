@@ -14,8 +14,8 @@ inputs:
     path: ./data
   pipeline_job_training_learning_rate1: 0.1
   pipeline_job_training_learning_rate2: 0.01
-  compute_train_node: cpu-cluster
-  compute_compare_node: cpu-cluster
+  compute_train_node: bootcamp1
+  compute_compare_node: bootcamp1
 
 outputs: 
   pipeline_job_best_model:
@@ -25,7 +25,7 @@ outputs:
 
 settings:
   default_datastore: azureml:workspaceblobstore
-  default_compute: azureml:cpu-cluster
+  default_compute: azureml:bootcamp1
   continue_on_step_failure: false
 
 jobs:
